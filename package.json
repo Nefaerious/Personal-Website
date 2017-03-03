@@ -1,9 +1,9 @@
 {
-  "name": "Personal Website",
+  "name": "personalwebsite",
   "version": "0.0.1",
   "description": "The personal website of Sammy Shin",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.1"
   }
 }
