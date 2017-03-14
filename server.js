@@ -16,6 +16,8 @@ app.use(sassMiddleware({
 }));
 
 app.set('views', './views');
+app.set('view engine', 'ejs');
+
 app.set('port', port);
 
 app.use('/', require('./routes/index.js'));
