@@ -15,10 +15,11 @@ app.use(sassMiddleware({
    prefix:  '/stylesheets'
 }));
 
+app.set('views', './views');
 app.set('port', port);
-app.use('/', require('./routes/index.js'));
 
-app.use(express.static('public'));
+app.use('/', require('./routes/index.js'));
+app.use('/stylesheets', express.static(path.join(__dirname, 'stylesheets')));
 
 http.listen(port, () => {
   console.log('listening on *:' + port);
