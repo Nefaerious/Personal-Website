@@ -22,6 +22,8 @@ app.set('port', port);
 
 app.use('/', require('./routes/index.js'));
 app.use('/stylesheets', express.static(path.join(__dirname, 'stylesheets')));
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
 
 http.listen(port, () => {
   console.log('listening on *:' + port);
