@@ -1,3 +1,25 @@
+<script>
+$(document).ready(function() {
+  $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: true, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
+  $('.dropdown-button').dropdown('open');
+  $('.dropdown-button').dropdown('close');
+});
+$(".button-collapse").sideNav();
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
+</script>
 <footer class="page-footer">
   <div class="container">
     <div class="row">
@@ -15,7 +37,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-      © 2017 Sammy Shin
+      Copyright © 2017 Sammy Shin, All rights reserved.
       <a class="grey-text text-lighten-4 right" href="#!">More to come later...</a>
     </div>
   </div>

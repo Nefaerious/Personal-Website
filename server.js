@@ -20,7 +20,8 @@ app.set('view engine', 'ejs');
 
 app.set('port', port);
 
-app.use('/', require('./routes/index.js'));
+app.use('/', require('./routes/index'));
+app.use('/blogs', require('./routes/blogs'));
 app.use('/stylesheets', express.static(path.join(__dirname, 'stylesheets')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
