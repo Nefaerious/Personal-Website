@@ -27,5 +27,5 @@ app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 
 http.listen(port, () => {
-  console.log('listening on *:' + port);
+  console.log('Listening on *:' + port + ' <3');
 });
