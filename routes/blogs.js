@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/blogs', (req, res) => {
   res.render('/blogs/');
 });
 
