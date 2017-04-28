@@ -15,16 +15,15 @@ app.use(sassMiddleware({
    prefix:  '/stylesheets'
 }));
 
-app.set('views', './views');
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.set('port', port);
-
 app.use('/', require('./routes/index'));
-app.use('/blogs', require('./routes/blogs'));
+app.use('/blogs', path.join(__dirname, require('routes/blogs')));
 app.use('/stylesheets', express.static(path.join(__dirname, 'stylesheets')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
+app.set('port', port);
 
 http.listen(port, () => {
   console.log('Listening on *:' + port + ' <3');
