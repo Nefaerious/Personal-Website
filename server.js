@@ -15,7 +15,7 @@ app.use(sassMiddleware({
    prefix:  '/stylesheets'
 }));
 
-app.set('views', __dirname + '/views');
+app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.use('/', require('./routes/index'));
