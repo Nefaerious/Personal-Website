@@ -22,7 +22,6 @@ app.use('/', require('./routes/index'));
 app.use('/blogs', require('./routes/blogs'));
 app.use('/etc', require('./routes/etc'));
 app.use('/resume', require('./routes/resume'));
-app.use('/jsstuff', express.static(path.join(__dirname, 'views/etc/game.js')));
 app.use('/stylesheets', express.static(path.join(__dirname, 'stylesheets')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
